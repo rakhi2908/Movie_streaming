@@ -1,0 +1,137 @@
+/*General Page styling*/
+  body{
+      background-color: #141414;
+      color:white;
+  }
+
+/*Navbar*/
+  .navbar{
+      background-color: #e50914;
+  }
+
+  .navbar-brand, .navbar-nav .nav-link {
+      color:white;
+  }
+
+  .navbar-nav .nav-link:hover {
+      color: #ff9900;
+  }
+
+/* Hero Section */
+.hero-section {
+    background-image: url("C:\Rohan\VScode\Python\streaming.jpg"); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+    z-index: 1;
+  }
+
+  .hero-section h1, .hero-section p {
+    position: relative;
+    z-index: 2; /* To ensure text is above the overlay */
+    color: white;
+  }
+  
+  .hero-section .btn {
+    position: relative;
+    z-index: 2;
+    background-color: #ff9900; /* Bright button that stands out */
+    border: none;
+  }
+
+  .hero-section .btn:hover {
+    background-color: #e50914;
+    border: 1px solid white;
+  }
+  
+/*Movie grid*/
+  .movie-grid .card{
+    background-color: #222;
+  }
+  
+  .movie-grid .card-text{
+    color: #aaa;
+  }
+  
+  .movie-grid .btn {
+    background-color: #e50914;
+    color: #fff;
+  }
+
+  .movie-grid .btn:hover{
+    background-color: #ff9900;
+  }
+  
+/* Footer */
+  footer {
+    background-color: #e50914;
+    color:white;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color:white;
+  }
+  
+  footer a:hover {
+    color: #ff9900;
+  }
+
+/*Registration background*/
+  .modal-content{
+    background-color: #222;
+    color:white;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .modal-header{
+    background-color: #141414;
+    border-bottom: 1px solid #555;
+  }
+
+  .modal-title{
+    color:white;
+  }
+
+  .btn-close{
+    filter:invert(100%);
+  }
+
+  /*Input fields*/
+  .modal-body .form-control{
+    background-color: white;
+    color: black;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .modal-body .form-control::placeholder {
+    color: #888; /* Light gray for placeholders */
+  }
+
+  .modal-body .form-control:focus{
+    background-color: #444;
+    border-color: #e50914;
+    color: black;
+  }
+
+  .btn-primary{
+    background-color: #e50914;
+    border:none;
+  }
+
+  .btn-primary:hover{
+    background-color: #ff9900;
+  }
